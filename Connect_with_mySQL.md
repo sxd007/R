@@ -1,7 +1,7 @@
 ## 安装RmySQL前的准备工作
 * 检查是否安装了libz， 如果没有的话需要安装libz
 
-yum install zlib-devel libz.so.1 -y
+> yum install zlib-devel libz.so.1 -y
 
 ## 在Linux安装RmySQL
 ### RMySQL介绍
@@ -10,19 +10,19 @@ yum install zlib-devel libz.so.1 -y
 ###  RMySQL在Linux下安装
 * 检查Linux的系统环境
  
-uname -a
+> uname -a
 
-cat/etc/issue
+> cat/etc/issue
 
-locale
+> locale
 
-R --version
+> R --version
 
-mysql --version
+> mysql --version
 
 * 在R环境中安装Rmysql;
 
->install.packages('RMySQL')  #also installing the dependency ‘DBI’
+> install.packages('RMySQL')  #also installing the dependency ‘DBI’
 
 
 
