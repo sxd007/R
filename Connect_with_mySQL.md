@@ -24,7 +24,20 @@
 
 > install.packages('RMySQL')  #also installing the dependency ‘DBI’
 
+如果出现配置错误，解决后重新执行安装
 
+> R CMD INSTALL RMySQL_.tar.gz
 
+> R CMD INSTALL --configure-args='--with-mysql-dir=/usr/lib/mysql' /path/RMySQL_0.9-3.tar.gz
 
+安装成功
+
+### 测试检验连接
+
+* 在mysql中建库建表
+
+> mysql -uroot -p
+
+mysql> create database mysql;
+mysql> grant all on rmysql.* to rmysql@'%' identified by 'rmysql';
 
