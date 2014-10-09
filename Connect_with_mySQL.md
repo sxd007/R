@@ -9,7 +9,7 @@ yum install zlib-devel libz.so.1 -y
 
 ###  RMySQL在Linux下安装
 * 检查Linux的系统环境
-* 
+ 
 uname -a
 
 cat/etc/issue
@@ -17,4 +17,14 @@ cat/etc/issue
 locale
 
 R --version
+
+mysql --version
+
+* 在R环境中安装Rmysql;
+
+>install.packages('RMySQL')  #also installing the dependency ‘DBI’
+
+
+
+
 
