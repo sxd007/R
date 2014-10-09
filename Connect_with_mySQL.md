@@ -10,11 +10,11 @@ yum install zlib-devel libz.so.1 -y
 ###  RMySQL在Linux下安装
 * 检查Linux的系统环境
 * 
-~ uname -a
+uname -a
 
-~ cat/etc/issue
+cat/etc/issue
 
-~ locale
+locale
 
-~ R --version
+R --version
 
