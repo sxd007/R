@@ -17,7 +17,7 @@
 > mysql> SELECT Host, User FROM mysql.user;
 
 > GRANT ALL ON *.* TO alpha@'127.0.0.1' IDENTIFIED BY "password";
-> GRANT ALL ON *.* TO alpha@'localhost' IDENTIFIED BY "beforward";
+> GRANT ALL ON *.* TO alpha@'localhost' IDENTIFIED BY "password";
 
 用服务器主机名替换第二个SET PASSWORD语句中的host_name。这是指定的user表中的root non-localhost记录的Host列名。
 
