@@ -32,8 +32,11 @@
 
 > 在环境变量的最后插入以下代码
     # set up PATH for R
+    
     > PATH=/home/alpha/R/bin:$PATH:   & 如果不这么做只能在安装目录 /home/alpha/R/bin/R 才能启动R
+    
     > export PATH
+    
     :wq
     
 > source etc/profile
