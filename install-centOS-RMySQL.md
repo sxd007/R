@@ -41,3 +41,16 @@
 mysql> create database mysql;
 mysql> grant all on rmysql.* to rmysql@'%' identified by 'rmysql';
 
+### 测试R链接
+
+> R
+
+> library(RMySQL)
+
+> Loading required package: DBI
+
+> conn <- dbConnect(MySQL(), dbname = "rmysql", username="rmysql", password="rmysql")
+
+> users = dbGetQuery(conn, "SELECT * FROM t_user")
+
+> dbDisconnect(conn)
