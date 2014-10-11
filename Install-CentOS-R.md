@@ -26,10 +26,16 @@
 
 * 即可完成编译安装
 
-* 设置环境变量
+* 在root权限下设置环境变量
 
-> export PATH=/home/alpha/R/bin/R:$PATH:   & 如果不这么做只能在安装目录 /home/alpha/R/bin/R 才能启动R
+> vi etc/profile
 
-这是从root 退出到一般用户alpha, 却发现又不能直接运行R, 通过/home/alpha/R/bin/R 可以启动， 重复上一段命令也没有解决。
+> 在环境变量的最后插入以下代码
+    # set up PATH for R
+    > PATH=/home/alpha/R/bin:$PATH:   & 如果不这么做只能在安装目录 /home/alpha/R/bin/R 才能启动R
+    > export PATH
+    :wq
+    
+> source etc/profile
 
-怎么办？
+（注意环境变量的路径应该是程序所在的bin文件夹， 原来设定的PATH=/home/alpha/R/bin/R:$PATH 是错误的）
