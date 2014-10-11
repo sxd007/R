@@ -29,3 +29,7 @@
 * 设置环境变量
 
 > export PATH=/home/alpha/R/bin/R:$PATH:   & 如果不这么做只能在安装目录 /home/alpha/R/bin/R 才能启动R
+
+这是从root 退出到一般用户alpha, 却发现又不能直接运行R, 通过/home/alpha/R/bin/R 可以启动， 重复上一段命令也没有解决。
+
+怎么办？
