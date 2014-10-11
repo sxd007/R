@@ -54,3 +54,5 @@ mysql> grant all on rmysql.* to rmysql@'%' identified by 'rmysql';
 > users = dbGetQuery(conn, "SELECT * FROM t_user")
 
 > dbDisconnect(conn)
+
+参考链接 http://blog.fens.me/r-mysql-rmysql/
