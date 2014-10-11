@@ -71,7 +71,18 @@ configure: WARNING: you cannot build PDF versions of vignettes and help pages
 
 安装结束后需要手动设置环境变量，可以打开.bashrc文件，添加R_HOME和R_LIBS变量，并修改PATH，这样R就完全安装好了。
 
-
+1 添加PATH，"..."省略了安装文件路径
+"# Source global definitions
+if [ -f /etc/bashrc ]; then
+. /etc/bashrc
+fi
+export PATH=/home/.../R/bin:$PATH"
+2 添加R_HOME和R_LIB路径
+“# R_HOME and R_LIB
+PATH=${R_HOME}/bin:$PATH
+export R_HOME=/home/.../R/bin/R
+export R_LIBS=/home/.../R/lib64/R/library
+export LD_LIBRARY_PATH=${R_HOME}/lib:${LD_LIBRARY_PATH}”
 
 
 
