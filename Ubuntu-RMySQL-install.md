@@ -10,7 +10,7 @@
 
 发现不能安装，只能进到 http://packages.ubuntu.com/trusty/zlib1g； 以及 http://packages.ubuntu.com/trusty/zlib1g-dev； 
 
-安装后，重新加载RMySQL
+安装后，重新加载RMySQL, 依然出现配置错误：
 
 Configuration error:
   could not find the MySQL installation include and/or library
@@ -49,3 +49,5 @@ Making 'packages.html' ... done
 Warning message:
 In install.packages("RMySQL") :
   installation of package ‘RMySQL’ had non-zero exit status
+
+似乎是说明MySQL的头文件和liabrary 目录的问题：
