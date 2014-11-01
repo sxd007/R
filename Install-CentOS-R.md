@@ -18,7 +18,7 @@
 > tar -zxvf R-3.1.1.tar.gz
 > cd R-2.13.1
 
-> ./configure --prefix=/home/alpha/R --enable
+> ./configure --prefix=/home/alpha/R --enable-R-shlib
 
 > make
 
